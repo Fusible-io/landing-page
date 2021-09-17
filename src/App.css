@@ -228,6 +228,19 @@ body {
   padding: 15px;
 }
 
+.containerData3 h4 {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #000000;
+}
+
+.containerData3 ul {
+  list-style: none;
+  text-align: left;
+  padding: 15px;
+}
+
 /* Footer CSS */
 .footer {
   display: flex;
@@ -265,4 +278,145 @@ body {
   padding-top: 12px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.mobIcon {
+  display: none;
+}
+
+.MobNav {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 400;
+  transition: transform 0.3s ease-in-out;
+}
+
+.MobNavItem {
+  min-width: 15.625em;
+  height: 100%;
+  background: #ffffff;
+  padding: 50px;
+  box-shadow: #dcdde1 0px 0px 16px;
+}
+
+.MobNavItem {
+  list-style: none;
+}
+
+.MobNavItem li {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 1024px) {
+  .headerContainer {
+    padding: 50px;
+  }
+
+  .blogCards {
+    padding: 0px;
+    flex-wrap: wrap;
+    grid-gap: 0px 50px;
+    justify-content: center;
+  }
+
+  .defiIcon {
+    display: none;
+  }
+
+  .defiCardContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 50px;
+  }
+
+  .defiCards,
+  .investorCard,
+  .investorCard2 {
+    margin-bottom: 25px;
+  }
+
+  .bscContainer {
+    flex-wrap: nowrap;
+  }
+
+  .investorImage {
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 0px 50px;
+  }
+
+  .containerData3 {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    grid-gap: 25px 50px;
+    justify-content: space-evenly;
+  }
+
+  .BSC_Img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .mobIcon {
+    display: block;
+  }
+
+  .headerContainer {
+    padding: 10px;
+  }
+
+  .headerContainer h1 {
+    font-size: 30px;
+  }
+
+  .iconsDiv {
+    flex-wrap: wrap;
+    grid-gap: 0px 25px;
+    justify-content: center;
+  }
+
+  .iconsDiv p {
+    margin-bottom: 25px;
+  }
+
+  .headerContainer p {
+    margin-bottom: 40px;
+  }
+
+  .bscContainer {
+    flex-wrap: wrap;
+  }
+
+  .containerData3 {
+    margin-bottom: 0px;
+    margin-top: 25px;
+  }
+
+  .footer {
+    padding: 0px 20px;
+    grid-gap: 25px 20px;
+    justify-content: flex-start;
+  }
+
+  .footerDesc {
+    justify-content: center;
+    grid-gap: 15px;
+    text-align: center;
+  }
+
+  .Nav1,
+  .Nav2 {
+    display: none;
+  }
 }

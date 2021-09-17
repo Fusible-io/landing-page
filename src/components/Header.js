@@ -110,7 +110,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div>
+            <div className="defiIcon">
               <img src={arrow} alt="arrow" />
             </div>
 
@@ -137,7 +137,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div>
+            <div className="defiIcon">
               <img src={arrow} alt="arrow" />
             </div>
 
@@ -192,9 +192,9 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <img src={buildImage} alt="BSC" />
+            <img src={buildImage} alt="BSC" className="BSC_Img" />
             <div>
-              <div className="containerData1">
+              <div className="containerData3">
                 <h4>Integrate Existing Solutions</h4>
 
                 <ul>
